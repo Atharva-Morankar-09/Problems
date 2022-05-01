@@ -31,3 +31,5 @@ int main()
   }
  return 0; 
 }
+
+T.C. - O(nlog(logn))
