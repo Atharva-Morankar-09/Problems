@@ -1,0 +1,47 @@
+
+Binary exponentiation (also known as exponentiation by squaring) is a trick which allows to calculate x^n using only O(log n)
+multiplications (instead of O(n) multiplications required by the naive approach)
+
+T.C. - O(log n)
+
+1) Power : 
+
+ll myPow(ll x, ll n)
+{
+	if (n == 0)
+	{
+		return 1;
+	}
+	else if (n % 2 == 0)
+	{
+		double ans = myPow(x, n / 2);
+		return ans * ans;
+	}
+	else
+	{
+		double ans = myPow(x, (n - 1) / 2);
+		ans *= ans;
+		return ans * x;
+	}
+}
+
+2) Modulo :
+
+ll myPow(ll x, ll n, ll m)
+{
+	if (n == 0)
+	{
+		return x % m;
+	}
+	if (n % 2 == 0)
+	{
+		double ans = myPow(x, n / 2, m);
+		return ans * ans % m;
+	}
+	else
+	{
+		double ans = myPow(x, (n - 1) / 2, m);
+		ans *= ans % m;
+		return ans * x % m;
+	}
+}
