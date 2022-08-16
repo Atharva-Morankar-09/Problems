@@ -1,4 +1,7 @@
 
+Sieve of Eratosthenes is an algorithm for finding all the prime numbers in a segment.
+T.C. - O(nlog(logn))
+
 //  0 - Prime
 //  1 - Not prime
 
@@ -32,4 +35,3 @@ int main()
  return 0; 
 }
 
-T.C. - O(nlog(logn))
