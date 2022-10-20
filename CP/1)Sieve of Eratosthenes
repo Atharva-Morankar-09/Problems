@@ -1,5 +1,5 @@
 
-Sieve of Eratosthenes is an algorithm for finding all the prime numbers in a segment.
+Sieve of Eratosthenes is an algorithm for finding all the prime numbers in a segment
 T.C. - O(nlog(logn))
 
 //  0 - Prime
