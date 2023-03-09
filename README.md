@@ -1,5 +1,7 @@
 # Problems
 
+CTRL ALT ELITE ROUND 2 LINK - https://www.hackerrank.com/ctrl-alt-elite-round-2
+
 TE Seminar:
 
 Seminar - https://drive.google.com/drive/folders/1m2-A-os4Jq3AewNyukPiOEbPvSsPD-Mv?usp=sharing
