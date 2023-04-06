@@ -1,0 +1,27 @@
+
+GFG - https://practice.geeksforgeeks.org/problems/78a6854c8a2915e05f236aa407dfaa1bbc8ae7d3/1
+
+class Solution {
+  public:
+    int equalSum(int N, vector<int> &A) {
+        if(N==1){
+            return 1;
+        }
+        
+        int sum=0,prev=0;
+        
+        for(int i=0;i<N;i++){
+            sum+=A[i];
+        }
+        
+        int curr=sum;
+        for(int i=0;i<N;i++){
+            curr-=A[i];
+            if(prev==curr){
+                return i+1;
+            }
+            prev+=A[i];
+        }
+     return -1;    
+    }
+};
